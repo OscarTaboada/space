@@ -1,0 +1,55 @@
+<html lang="es">
+     <head>
+         <title>Juego-Examen final</title>
+     </head>
+     <style>
+        body {
+          background: linear-gradient(
+		  	  0deg,
+		    	rgb(48, 24, 1) 0%,
+		  	  rgb(255, 230, 0) 100%
+		      );
+          text-align: center;
+          margin: 25px;
+        }
+        .cron{
+          font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+          font-size: 28px;
+          margin: 1px;
+          color:rgb(247, 245, 156)
+        }
+        .msj{
+          margin: 1px;
+          color: rgb(247, 245, 156)
+        }
+        .btn{
+          background: #0703ec;
+          border-radius: 28px;
+          box-shadow: 6px 5px 24px #666666;
+          color: #fafafa;
+          font-size: 12px;
+          padding: 12px;
+          text-decoration: none;
+        }
+        .btn:hover{
+          background: #2079b0;
+          text-decoration: none;
+        }
+	  </style>
+    <div id="iniciar">
+      <input type="button" class="btn" onclick="start()" value="INICIAR JUEGO">
+    </div>
+     <body>
+        <canvas id ="canvas" width="800" height="500" ></canvas>
+        <script src ="index.js"></script>
+        <p class="cron">
+          <samp id="minutos">0</samp>:<samp id="segundos">0</samp>
+        </p>
+        <p class="msj">💥💀No choque con los meteoros💀💥</p>
+        <audio controls>
+          <source src="music/music.mpeg" loop="true" autoplay="true">
+        </audio>
+        
+     </body>
+    
+</html>
